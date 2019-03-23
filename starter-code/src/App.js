@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import Navbar from '../components/Navbar';
+import SignUp from '../components/SignUp';
+
 
 class App extends Component {
   render () {
     return (
-      <Navbar />
+      <SignUp />
     )
   }
 }

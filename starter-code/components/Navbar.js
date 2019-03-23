@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CoolButton from './CoolButton';
 
 class Navbar extends Component {
   render () {
@@ -6,7 +7,7 @@ class Navbar extends Component {
       <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <a className="navbar-item" href="https://bulma.io">
-          <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"></ img>
+          <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" />
         </a>
 
         <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -27,12 +28,8 @@ class Navbar extends Component {
         <div className="navbar-end">
           <div className="navbar-item">
             <div className="buttons">
-              <a className="button is-primary">
-                <strong>Sign up</strong>
-              </a>
-              <a className="button is-light">
-                Log in
-              </a>
+              <CoolButton isPrimary>Sign up</CoolButton>
+              <CoolButton isLight>Log In</CoolButton>
             </div>
           </div>
         </div>
